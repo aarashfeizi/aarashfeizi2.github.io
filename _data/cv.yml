@@ -2,96 +2,121 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
+      value: Aarash Feizi
     - name: Date of Birth
-      value: 14th March 1879
+      value: 19th December 1995
     - name: Languages
-      value: English, German
-
-- title: Education
-  type: time_table
-  contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
-
-- title: Experience
-  type: time_table
-  contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
-      description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
-      description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
-      description:
-
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
-  type: time_table
-  contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+      value: English, Persian
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: Computer Vision
       items:
-        - Description 1.
-        - Description 2.
+        - Representation Learning
+        - Self-Supervised Learning
+    - title: Learning on Graphs
+      items:
+        - Knowledge Graphs
+        - Graph Representation Learning
+        - Temporal Graphs
 
-- title: Other Interests
-  type: list
+
+- title: Education
+  type: time_table
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - title: Ph.D. in Computer Science
+      institution: McGill University, Montreal, Canada
+      year: 2019-present
+#      description:
+#        - PhD Candidate Student
+#        - Description 2.
+#        - title: Description 3.
+#          contents:
+#            - Sub-description 1.
+#            - Sub-description 2.
+    - title: B.Sc. in Software Engineering
+      institution: Sharif University of Technology, Tehran, Iran
+      year: 2014-2019
+#      description:
+#        - Description 1.
+#        - Description 2.
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Research Assistant
+      institution: University of Toronto, Toronto, Canada
+      year: 2018
+      description:
+        - Worked in a group underthe supervision of <a href="https://www.ece.utoronto.ca/people/plataniotis-k-n/">Professor Plataniotis</a>
+        - Project goal was to improve the robustness of convolutional neural networks (CNNs) against adversarial attacks
+        - Implemented in Python 3
+#        - title:
+#          contents:
+#            - Sub-description 1.
+#            - Sub-description 2.
+    - title: Software Engineering Intern
+      institution: Moj Secure E-commerce Co., Tehran, Iran
+      year: 2018
+      description:
+        - Interned in the AI team underthe supervision of the CTO and co-founder of Moj Company
+        - Project goal was to parse an arbitrary image of any valid bank card and detect the digits in the 16-digit client card number
+        - Used a Single Shot Detectorfor object detection and a CNN for digitrecognition
+        - Implemented in Python 3 using TensorFlow and Keras
+
+- title: Projects
+  type: time_table
+  contents:
+    - title: <a href="https://github.com/aarashfeizi/revisited-hotels">Revisiting Hotels-50K and Hotel-ID</a>
+      year: 2022
+      items:
+        - Revisited two image datasets, Hotels-50K and Hotel-ID, and proposed new training
+          and evaluation splits with different levels of difficulty
+        - Proposed evaluation splits based on the images’ class and super-class information
+          to imitate real-world scenarios
+        - Accepted paperforthe <a href="https://sites.google.com/view/dataperf2022">ICML 2022 DataPerf</a> workshop
+
+    - title: <a href="https://arxiv.org/abs/2009.11355">Structure-Aware Negative Sampling in Knowledge Graphs</a>
+      year: 2020
+      items:
+        - Design and implementation of a novel efficient negative sampling method with low computational cost for knowledge graphs
+        - Method  based on considering the local neighborhood of each node when selecting the negative samples
+        - Accepted paper for the <a href="https://2020.emnlp.org/">EMNLP 2020</a> conference
+        - Implemented in Python 3 using PyTorch
+
+    - title: Scientific Paper Acceptance Prediction
+      year: 2019
+      items:
+        - Design and implementation of neural network model which predicts acceptance of scientific papers with 84% accuracy, based on their abstracts and introductions
+        - Implemented in Python 3 using Keras and TensorFlow
+
+    - title: Salary Trend Analysis
+      year: 2019
+      items:
+        - Gathered and aggregated employee data from different occupation sectors from years 1996 to 2018 from Ontario, Canada
+        - Studied salary trends and found similar trend patterns exclusive to a few occupation sectors
+        - Used the Jensen–Shannon divergence between salary trends to construct a salary-similarity-network across employees in different sectors
+        - Built a multipartite graph from the employers and found meaningful employer embeddings
+
+
+- title: Honors and Awards
+  type: time_table
+  contents:
+    - year: 2022
+      items:
+        - Received the Fonds de recherche du Québec – Nature et technologies (FRQNT) doctoral scholarship
+#        - Nobel Prize in Physics
+#        - Matteucci Medal
+    - year: 2021
+      items:
+        - Ranked 3rd in DataJam Against Exploitation Canada competition
+#        - Max Planck Medal
+    - year: 2014
+      items:
+        - Ranked 100th out of over 220,000 students in the National University Entrance Exam
+
+#- title: Other Interests
+#  type: list
+#  contents:
+#    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.

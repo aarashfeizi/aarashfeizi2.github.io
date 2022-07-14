@@ -3,7 +3,7 @@ layout: about
 title: about
 permalink: /
 
-description: PhD Canidate at <a href="https://www.cs.mcgill.ca">McGill University</a> <br> Researcher at <a href="https://mila.quebec">Mila, Quebec AI Institute</a>
+subtitle: PhD Candidate at <a href= 'https://www.cs.mcgill.ca' >McGill University</a> <br> Researcher at <a href= 'https://mila.quebec' >Mila, Quebec AI Institute</a>
 
 
 profile:
